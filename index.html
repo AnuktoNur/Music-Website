@@ -1,21 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Anukto Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anukto Music Hub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:#000;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+color:#00ffcc;
+font-size:40px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+padding:15px;
+background:#1a1a1a;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:8px 15px;
+border-radius:20px;
+background:#333;
+}
+
+nav a:hover{
+background:#00ffcc;
+color:black;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(to right,#000,#222);
+}
+
+.hero h2{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+color:#ccc;
+}
+
+.section{
+padding:50px 20px;
+}
+
+.section h2{
+margin-bottom:20px;
+color:#00ffcc;
+}
+
+.music-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1c1c1c;
+padding:20px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+audio{
+width:100%;
+margin-top:10px;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Anukto Music</h1>
+<header>
+<h1>Anukto Music Hub</h1>
+<p>Listen Music From Around The World</p>
+</header>
 
-<h2>My Song</h2>
+<nav>
+<a href="#english">English</a>
+<a href="#love">Love</a>
+<a href="#sad">Sad</a>
+<a href="#modern">Modern</a>
+<a href="#ai">AI Tracks</a>
+<a href="#bd">BD Culture</a>
+<a href="#indian">Indian</a>
+<a href="#ritual">Ritual</a>
+<a href="#festival">Festival</a>
+</nav>
+
+<section class="hero">
+<h2>Welcome To Anukto Music Hub</h2>
+<p>Discover Music, Culture & Emotions</p>
+</section>
+
+<section id="english" class="section">
+<h2>🎤 English Songs</h2>
+<div class="music-grid">
+<div class="card">
+<h3>English Track 1</h3>
 <audio controls>
-  <source src="song.mp3" type="audio/mpeg">
+<source src="music/english1.mp3" type="audio/mpeg">
 </audio>
+</div>
+</div>
+</section>
 
-<h2>My Video</h2>
-<video width="400" controls>
-  <source src="video.mp4" type="video/mp4">
-</video>
+<section id="love" class="section">
+<h2>❤️ Love Songs</h2>
+<div class="music-grid">
+<div class="card">
+<h3>Love Song 1</h3>
+<audio controls>
+<source src="music/love1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<section id="sad" class="section">
+<h2>💔 Sad Songs</h2>
+<div class="music-grid">
+<div class="card">
+<h3>Sad Song 1</h3>
+<audio controls>
+<source src="music/sad1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<section id="modern" class="section">
+<h2>🎶 Modern Music</h2>
+<div class="music-grid">
+<div class="card">
+<h3>Modern Track</h3>
+<audio controls>
+<source src="music/modern1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<section id="ai" class="section">
+<h2>🤖 AI Track Music</h2>
+<div class="music-grid">
+<div class="card">
+<h3>AI Song</h3>
+<audio controls>
+<source src="music/ai1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<section id="bd" class="section">
+<h2>🇧🇩 Bangladeshi Cultural Music</h2>
+<div class="music-grid">
+<div class="card">
+<h3>Baul Song</h3>
+<audio controls>
+<source src="music/baul.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<section id="indian" class="section">
+<h2>🇮🇳 Indian Music</h2>
+<div class="music-grid">
+<div class="card">
+<h3>Indian Track</h3>
+<audio controls>
+<source src="music/indian1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<section id="ritual" class="section">
+<h2>🕉 Ritual Music</h2>
+<div class="music-grid">
+<div class="card">
+<h3>Spiritual Track</h3>
+<audio controls>
+<source src="music/ritual1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<section id="festival" class="section">
+<h2>🎉 Festival Music</h2>
+<div class="music-grid">
+<div class="card">
+<h3>Festival Song</h3>
+<audio controls>
+<source src="music/festival1.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Anukto Music Hub | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
